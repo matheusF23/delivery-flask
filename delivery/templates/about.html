@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 
+{% import "macros/hero.html" as hero %}
+
 {% block hero %}
-<section class="hero is-primary">
-    <div class="hero-body">
-        <h1>Codefoods - Sobre</h1>
-    </div>
-</section>
+{{ hero.hero("Sobre", "Conheça o Codefoods") }}
 {% endblock hero %}
 
 {% block main %}
