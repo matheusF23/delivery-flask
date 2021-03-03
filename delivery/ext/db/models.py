@@ -7,6 +7,7 @@ class User(db.Model):
     email = db.Column("email", db.Unicode, unique=True, nullable=False)
     passwd = db.Column("passwd", db.Unicode)
     admin = db.Column("admin", db.Boolean)
+    name = db.Column("name", db.Unicode)
 
 
 class Category(db.Model):
