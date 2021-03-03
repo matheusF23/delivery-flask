@@ -1,6 +1,5 @@
 from flask_migrate import Migrate
 from delivery.ext.db import db
-from delivery.ext.db import models # noqa
 
 
 migrate = Migrate()
