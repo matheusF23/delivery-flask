@@ -7,8 +7,8 @@ from delivery.ext.db.models import Category
 admin = Admin()
 
 def init_app(app):
-    admin.name = "Codefoods"
-    admin.template_mode = "bootstrap2"
+    admin.name = app.config.get("ADMIN_NAME", "Codefoods")
+    admin.template_mode = app.config.get("ADMIN_TAMPLATE_MODE","bootstrap2")
     admin.init_app(app)
 
     # TODO: proteger com senha
